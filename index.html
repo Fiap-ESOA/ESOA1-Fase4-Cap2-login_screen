@@ -4,13 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIAP - Login Screen </title>
+  <link rel="stylesheet" href="/style/style.css">
+  <script src="/script/script.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/style/style.css">
-  <script src="/script/script.js"></script>
 </head>
 <body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <img class="img-fluid" src="/img/fiap.png" alt="logo da fiap">
+      </div>
+      <div class="col text-center">
+        <div class="container text-center">
 
+        </div>
+        <form action="" class="was-validated">
+          <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email" placeholder="Digite o Email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="pwd" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Digite a senha" name="pswd" required>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="chkPermissao"  name="remember" required>
+            <label class="form-check-label" for="myCheck">Eu concordo com o termos de aceite.</label>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
